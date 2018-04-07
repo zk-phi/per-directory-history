@@ -109,7 +109,7 @@ function _per-directory-history-change-directory() {
 }
 
 function _per-directory-history-addhistory() {
-  print -Sr -- "${1%%$'\n'}"
+  print -Sr -- "$(echo $1)"
   fc -p $_per_directory_history_directory
 }
 
